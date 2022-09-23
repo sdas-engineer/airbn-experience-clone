@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100%;
+  color: #222222;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #918e9b;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 480px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.nav--logo {
+  max-width: 100px;
+}
+
+a.nav--btn {
+  cursor: pointer !important;
+  display: flex !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  border-color: black !important;
+  width: auto !important;
+  border-radius: 8px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  border: none !important;
+  background: #222222 !important;
+  color: #ffffff !important;
+  margin-right: 0;
+}
+
+.nav--link {
+  text-decoration: none;
+  color: #222222;
+}
+
+@media only screen and (max-width: 480px) {
+  a.nav--btn {
+    visibility: hidden;
+  }
+}
+
+section {
+  padding: 20px;
+}
+
+.hero {
+  display: flex;
+  height: 720px;
+  margin-bottom: 0;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  background-position: 0 0, 0 100%;
+  background-size: auto, auto;
+  background-repeat: repeat, no-repeat;
+}
+
+@media only screen and (max-width: 480px) {
+  .hero {
+    height: 550px;
+    padding-top: 85px;
+  }
+}
+
+.hero--header {
+  max-width: 850px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 80px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  background: linear-gradient(to left, #008489, #a61d55, #ffb400);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 6s ease-in infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero--header {
+    font-size: 50px;
+  }
+}
+
+.hero--text {
+  padding-top: 0;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 480px) {
+  .hero--text {
+    margin-top: 1px;
+  }
+}
+
+.hero--btn {
+  cursor: pointer !important;
+  display: flex !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  border-color: black !important;
+  width: auto !important;
+  border-radius: 8px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  border: none !important;
+  background: #222222 !important;
+  color: #ffffff !important;
+  margin-top: 10px;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .cards-list {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card--image {
+  border-radius: 9px;
+  width: 100%;
+  margin-bottom: 9px;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card--star {
+  height: 12px;
+}
+
+.card--price {
+  margin-top: auto;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+  color: #000;
+}
+
+footer {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.footer--link {
+  text-decoration: none;
+}
